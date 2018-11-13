@@ -6,6 +6,7 @@
     <meta name = "viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    
 </head>
 <body>
     <header>
@@ -50,17 +51,23 @@
                 <li>
                     <div class="container">
                         <h2 class="fancy-box">Project name</h2>
-                        <div class="fancy-box description"></div>
-                        <p>This is a small description. Keep it simple and to the point.</p>
-                        <a href="#">See Details</a>
+                        <div class="fancy-box description">
+                            <p>This is a small description. Keep it simple and to the point.</p>
+                            <a href="#">See Details</a>
+                        </div>
                     </div>
                 </li>
-            </ul>            
+            </ul>    
+            <div class="pager">
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+            </div>        
         </div>
         <div class="projects">
             <div class="container">
                 <h3>Recent Projects</h3>
-                <ul>
+                <ul class="clearfix">
                     <li><img src="images/portfolio-thumb-1.jpg" alt="portfolio">
                         <div class="hover-content">
                             <h5>Project name</h5>
@@ -100,9 +107,18 @@
         <div class="container">
             <div class="logo">
                 <img src="images/logo.png" alt="logo">
-                <p>2018 &copy; KIM</p>
             </div>
+            <p>2018 &copy; KIM</p>
         </div>
     </footer>
+    
+    <div class="loading-box">
+        <ul> 
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <script src="./js/timer.js"></script>
 </body>
 </html>
