@@ -62,6 +62,8 @@ header aside {
     background-color: #000;
     color: #fff;
     padding: 30px 0;
+    transition: all 0.3s;
+    margin-left: -300px;
 }
 header aside a {
     color: #fff;
@@ -88,22 +90,69 @@ header aside h4 {
 header aside .snb {
     margin-bottom: 50px;
 }
-header aside snb li a {
+header aside .snb li a {
     height: 40px;
     line-height: 40px;
     display: block;
     font-size: 18px;
     padding-left: 30px;
     position: relative;
+    z-index: 1;
 }
-header aside snb li a:before {
+header aside .snb li a:hover:before {
+    width: 100%;
+}
+header aside .snb li a:before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
-    width: 100%;
-    background-color: red;
+    width: 5px;
+    z-index: -1;
+    transition: all 0.3s;
+}
+aside .snb li:nth-child(1) a:before {
+	background-color: #ec1b5a;
+}
+aside .snb li:nth-child(2) a:before {
+	background-color: #f8c407 ;
+}
+aside .snb li:nth-child(3) a:before {
+	background-color: #ccdb38;
+}
+aside .snb li:nth-child(4) a:before {
+	background-color: #35acdf ;
+}
+aside .sns-wrap li {
+    display: inline-block;
+    margin-right: 10px;
+}
+aside .sns-wrap li:last-child {
+    margin-right: 0;
+}
+aside .sns-wrap li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background: no-repeat center center / 100% 100%;
+    text-indent: -9999em;
+}
+.sns-wrap .facebook a {
+	background-image: url(../images/facebook.png);
+}
+.sns-wrap .google-plus a {
+	background-image: url(../images/googleplus.png);
+}
+.sns-wrap .line a {
+	background-image: url(../images/line.png);
+}
+.sns-wrap .twitter a {
+	background-image: url(../images/twitter.png);
+}
+aside .sns-wrap {
+    text-align: center;
 }
 header .logo {
     float: left;
@@ -118,11 +167,13 @@ header .bar-wrap {
     display: none;
 }
 #bar:checked+ aside {
-    display: block;
+    margin-left: 0;
 }
 
-
-
+/* slide */
+.content .slide-wrap {
+    
+}
 
 
 
